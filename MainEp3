@@ -1,1 +1,20 @@
+public class MainEp3 {
 
+	public static void main(String[] args) {
+		//พนักงานคนที่2
+		Employee3 Emp2 = new Employee3();
+		Emp2.setId("2");
+	    Emp2.setName("Two");
+		Emp2.setSalary(65000.00);
+		
+		//เรียกใช้ตัวด้านบนผ่าน method getter
+		/* 
+		ก้อนนี้จะ return ค่าเข้ามาให้แสดงผล
+		public String getXXX() 
+		return XXX;
+	    */
+		System.out.println(Emp2.getName()); 
+		System.out.println(Emp2.getId()); 
+		System.out.println(Emp2.getSalary()); 
+	}
+}
