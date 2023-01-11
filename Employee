@@ -1,0 +1,8 @@
+// class and object
+public class Employee {
+	// Attribute --> องค์ประกอบของพนักงาน
+	public String id;
+	public String name;
+	public Double salary;
+	
+}
