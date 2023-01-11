@@ -1,0 +1,32 @@
+public class Employee4 {
+	public String id;
+	public String name;
+	public Double salary;
+	
+	
+	public String getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	public Double getSalary() {
+		return salary;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+	// method ที่ใช้แสดงค่า โดยจะ print ข้อมูลใน MainEp3
+    public void displayEmployee() {
+    	System.out.println("ID = " + this.id);
+    	System.out.println("NAME = " + this.name);
+    	System.out.println("SALARY = " + this.salary);
+    }    	
+}
