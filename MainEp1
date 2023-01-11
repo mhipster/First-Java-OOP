@@ -1,0 +1,22 @@
+public class MainEp1 {
+
+	public static void main(String[] args) {
+		/*
+		 * เรียกใช้งานจาก Employee
+		 * create object
+		 */
+		Employee Emp = new Employee();
+		
+		// วิธีกำหนดค่าโดยตรงจากคลาส Employee
+		//public String id;
+		Emp.id = "3238"; 
+		//public String name;
+		Emp.name = "May";
+		//public Double salary;
+		Emp.salary = 53000.00; 
+		
+		System.out.println("ID = " + Emp.id);
+		System.out.println("NAME = " + Emp.name);
+		System.out.println("SALARY = " + Emp.salary);
+	}
+}
