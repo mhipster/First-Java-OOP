@@ -1,0 +1,20 @@
+
+public class MainEp4 {
+
+	public static void main(String[] args) {
+		//พนักงานคนที่2
+		Employee4 Emp2 = new Employee4();
+	    Emp2.setId("2");
+		Emp2.setName("Two");
+		Emp2.setSalary(65000.00);
+						
+		//พนักงานคนที่3
+		Employee4 Emp3 = new Employee4();
+		Emp3.setId("3");
+		Emp3.setName("Three");
+		Emp3.setSalary(75000.00);
+				
+		Emp2.displayEmployee();
+		Emp3.displayEmployee();
+	}
+}
