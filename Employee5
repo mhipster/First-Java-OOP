@@ -1,0 +1,42 @@
+/* Constructor ของ Class
+ * เป็น method พิเศษที่จะถูกสั่งให้ทำงานโดยอัตโนมัติเมื่อมีการสร้างวัตถุขึ้น 
+ * เพื่อกำหนดค่าเริ่มต้นให้กับตัวแปรคลาสของวัตถุ
+ * มีชื่อเหมือนกับคลาส ตั้งชื่อซ้ำกันได้ การเข้าถึงเป็นแบบ public
+ * method มีการคืนค่ากลับแต่ constructor ไม่มีการคืนค่ากลับ
+ */
+public class Employee5 {
+	public String id;
+	public String name;
+	public Double salary;
+	
+	/* Default constructor 
+	 * เป็น constructor ที่ยังไม่กำหนดค่า ,ไม่ต้องกำหนด parameter 
+	 */
+	public Employee5() {
+		System.out.println("Create Object Complete");
+		this.id = "1";
+		this.name = "Mumi";
+		this.salary = 60000.00;
+	}
+	// กำหนดค่าใน constructor โดยการสร้าง method ให้แสดงผลลัพธ์
+	 public void displayEmployee() {
+	    	System.out.println("ID = " + this.id);
+	    	System.out.println("NAME = " + this.name);
+	    	System.out.println("SALARY = " + this.salary);
+	    }
+	 
+	// constructor 
+	public Employee5(String id, String name, Double salary) {
+		super();
+		this.id = id; //ไม่ต้องเรียก setter กำหนดค่าตอนที่สร้าง object ได้เลย
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	// สร้าง constructor ให้รับเฉพาะ id และ name
+	public Employee5(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}			
+}
