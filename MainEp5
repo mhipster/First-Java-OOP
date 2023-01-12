@@ -1,0 +1,20 @@
+public class MainEp5 {
+
+	public static void main(String[] args) {
+		
+		// create object
+		Employee5 e5 = new Employee5();
+		
+		// Employee5 จะเรียกคำสั่งที่อยู่ใน default constructor
+		e5.displayEmployee();
+		
+		// เรียกใช้ constructor
+		// public Employee5(String id, String name, Double salary) 
+		Employee5 Emp5 = new Employee5("777","Ducky",45000.00);
+		Emp5.displayEmployee();
+		
+		//public Employee5(String id, String name)
+		Employee5 EM5 = new Employee5("999","Ryu");
+		EM5.displayEmployee();		
+	}
+}
